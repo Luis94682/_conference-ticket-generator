@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gerador de pass</title>
+    <link rel="shortcut icon" href="public/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/card.css">
+    <script src="public/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <img src="public/img/logo-full.svg" alt="logo-full" class="logo-full" >
+                <h1>Congrats, <span id="fullname">Luis Manuel!</span><br>Your ticket is ready</h1>
+                <p class="conference">we`ve emailed your ticket to <br>
+                    <span class="gmail">Luis@gmail.com</span>
+                    and will send <br>update in the run up to the event
+                </p>
+                <div class="col-sm-6 col-sm-card" id="img-card">
+                    <div class="card-img">
+                        <div class="inf-content">
+                            <img src="public/img/logo-full.svg" alt="">
+                            <p><span>Jan 31, 2025 / Austin, TX</span></p>
+                        </div>
+
+                        <div class="profil-info">
+                            <div class="img-profile">
+                                <img src="public/img/image-avatar.jpg" alt=""  id="mostraImg">
+                            </div>
+                            <div class="content-profil-inf">
+                                <h4>Luis manuel</h4>
+                                <span id="mostraEmail">@Luismanuel</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="public/img/pattern-squiggly-line-bottom-desktop.svg" alt="">
+        </div>
+        <div class="line-hei">
+            <img src="public/img/pattern-lines.svg" alt="">
+        </div>
+
+        <div class="top-line">
+            <img src="public/img/pattern-squiggly-line-top.svg" alt="">
+        </div>
+    </main>
+
+
+
+    
+<script>
+  // Recupera os dados do localStorage
+  const email = localStorage.getItem("email");
+  const imgSrc = localStorage.getItem("img");
+  const nome=localStorage.getItem("nome")
+
+  // Mostra na página
+
+  document.getElementById("mostraEmail").textContent = email || "Não preenchido";
+  document.getElementById("fullname").textContent= nome.toUpperCase()
+  document.querySelector(".gmail").textContent=email
+  if(imgSrc){
+    document.getElementById("mostraImg").src = imgSrc;
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+.profil-info{
+  
+    display: flex;
+    height: 100px;
+     padding: 10px 1.3rem;
+     gap: 5px;
+}
+.profil-info .img-profile{
+    
+    width:60px;
+    height: 60px;
+    
+}
+
+.profil-info .img-profile img{
+    border-radius: 9px;
+    width:100%;
+}
+
+.content-profil-inf span{
+    color: #ccc;
+    font-size: 12px;
+    text-align: start;
+}
+.inf-content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    position: absolute;
+    left: 0;
+    gap: 10px;
+    padding: 10px 1.3rem;
+}
+
+.inf-content p{
+    color: #ccc;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+
+.content-profil-inf h4{
+    font-size: 22px;
+}
+.profil-info{
+    position: absolute;
+    top: 8rem;
+    left: 0;
+
+}
